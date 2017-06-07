@@ -39,8 +39,17 @@ object Main {
     iterationBalance(chars, 0)
   }
 
-    /**
-      * Exercise 3
-      */
-    def countChange(money: Int, coins: List[Int]): Int = ???
+  /**
+    * Exercise 3. The exchange possibilities for a certain money with a few coins is like
+    * the new possibility of money with the highest coin next to that of the money immediately
+    * above with all the coins
+    */
+  def countChange(money: Int, coins: List[Int]): Int = {
+    if (money < 0)
+      0
+    else if (coins.isEmpty)
+      if (money == 0) 1 else 0
+    else
+      countChange(money, coins.tail) + countChange(money - coins.head, coins)
   }
+}

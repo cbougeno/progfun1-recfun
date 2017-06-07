@@ -47,7 +47,7 @@ def balance(chars: List[Char]): Boolean
 
 There are three methods on List[Char] that are useful for this exercise:
 
-```scala
+```
 chars.isEmpty: Boolean returns whether a list is empty
 chars.head: Char returns the first element of the list
 chars.tail: List[Char] returns the list without the first element
