@@ -19,7 +19,7 @@ The numbers at the edge of the triangle are all 1, and each number inside the tr
 
 Do this exercise by implementing the pascal function in Main.scala, which takes a column c and a row r, counting from 0 and returns the number at that spot in the triangle. For example, pascal(0,2)=1,pascal(1,2)=2 and pascal(1,3)=3.
 
-```
+```scala
 def pascal(c: Int, r: Int): Int
 ```
 
@@ -41,13 +41,13 @@ The last example shows that it’s not enough to verify that a string contains t
 
 Do this exercise by implementing the balance function in Main.scala. Its signature is as follows:
 
-```
+```scala
 def balance(chars: List[Char]): Boolean
 ```
 
 There are three methods on List[Char] that are useful for this exercise:
 
-```
+```scala
 chars.isEmpty: Boolean returns whether a list is empty
 chars.head: Char returns the first element of the list
 chars.tail: List[Char] returns the list without the first element
@@ -63,7 +63,7 @@ Write a recursive function that counts how many different ways you can make chan
 
 Do this exercise by implementing the countChange function inMain.scala. This function takes an amount to change, and a list of unique denominations for the coins. Its signature is as follows:
 
-```
+```scala
 def countChange(money: Int, coins: List[Int]): Int
 ```
 
